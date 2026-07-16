@@ -84,7 +84,7 @@ class ModelTrainer:
             model_report: dict = evaluate_models(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test, models=models, params=params)
             
             # To get the best model score from the dictionary
-            best_model_score = max(sorted(model_report.values()))
+            best_model_score = max(model_report.values())
             
             # To get the best model name from the dictionary
             best_model_name = list(model_report.keys())[

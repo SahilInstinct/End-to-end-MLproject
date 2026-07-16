@@ -47,14 +47,12 @@ class DataIngestion:
             raise CustomException(e, sys)
 
 if __name__ == "__main__":
+    # For running this component in isolation (e.g. to inspect the train/test split).
+    # To run the full pipeline, use: python -m src.pipeline.train_pipeline
     obj = DataIngestion()
     train_data, test_data = obj.initiate_data_ingestion()
-    
-    data_transformation = DataTransformation()
-    train_arr,test_arr, _ = data_transformation.initiate_data_transformation(train_data, test_data)
-    
-    model_trainer = ModelTrainer()
-    print(model_trainer.initiate_model_trainer(train_arr, test_arr))
+    print(f"Train data saved to: {train_data}")
+    print(f"Test data saved to: {test_data}")
     
     
     

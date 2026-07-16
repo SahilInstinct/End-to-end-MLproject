@@ -1,1 +1,94 @@
-<h1> Welcome to the student math score prediction app </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Predictor</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Student Predictor</div>
+
+    <a href="/predictdata" class="btn-nav">
+        Predict
+    </a>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+            Predict Student Math Scores using Machine Learning
+        </h1>
+
+        <p>
+            An end-to-end Machine Learning project that predicts a student's
+            mathematics score using demographic and educational information.
+        </p>
+
+        <a href="/predictdata" class="hero-btn">
+            Start Prediction →
+        </a>
+
+    </div>
+
+</section>
+
+<section class="features">
+
+    <div class="card">
+        <h3>⚡ Fast</h3>
+        <p>Get predictions instantly.</p>
+    </div>
+
+    <div class="card">
+        <h3>🧠 ML Powered</h3>
+        <p>Prediction generated using a trained machine learning model.</p>
+    </div>
+
+    <div class="card">
+        <h3>📊 Reliable</h3>
+        <p>Built with Scikit-Learn and a complete ML pipeline.</p>
+    </div>
+
+</section>
+
+<section class="steps">
+
+    <h2>How it Works</h2>
+
+    <div class="step-container">
+
+        <div class="step">
+            <span>1</span>
+            Enter Student Details
+        </div>
+
+        <div class="step">
+            <span>2</span>
+            Click Predict
+        </div>
+
+        <div class="step">
+            <span>3</span>
+            View Predicted Score
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    End-to-End Machine Learning Project using Flask & Scikit-Learn
+
+</footer>
+
+</body>
+</html>

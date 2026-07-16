@@ -3,8 +3,6 @@ import numpy as np
 import pandas as pd
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
-from sklearn.preprocessing import StandardScaler
-
 app = Flask(__name__)
 
 @app.route('/')
