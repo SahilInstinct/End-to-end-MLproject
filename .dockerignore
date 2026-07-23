@@ -1,0 +1,27 @@
+# Version control
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+venv_test/
+*.egg-info/
+End_to_end_MLproject.egg-info/
+
+# Local artifacts -- these get regenerated inside the image by train_pipeline.py,
+# no need to ship whatever's on your machine
+artifacts/
+logs/
+catboost_info/
+
+# Notebooks -- not needed to run the app, and ipynb files bloat the image
+notebook/*.ipynb
+notebook/catboost_info/
+
+# Editor/OS cruft
+.vscode/
+.idea/
+.DS_Store
